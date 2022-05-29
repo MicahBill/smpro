@@ -18,7 +18,7 @@ fileName = os.path.splitext(os.path.basename(__file__))[0]
 db = livejson.File("token/%s.json" %fileName)
 
 if ":" in db['token']:
-    app = "ANDROIDLITE\t2.11.1\tAndroid OS\t5.1.1"
+    app = "X-Line-Application\t2.11.1\tAndroid OS\t5.1.1"
 else:
     app = "DESKTOPWIN\t6.0.3\tWindows\t10"
 try:
