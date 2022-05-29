@@ -14,7 +14,7 @@ import os, livejson, traceback, time, sys
 from data import commands
 OT = OpType
 
-fileName = os.path.splitext(os.path.basename(__file__))[0]
+fileName = os.path.splitext(os.path.basename('data.py'))[0]
 db = livejson.File("token/%s.json" %fileName)
 
 if ":" in db['token']:
